@@ -2,6 +2,7 @@ package com.flmhospitals.dto;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,20 +12,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class AppointmentRequestDTO {
+public class RescheduleAppointmentDTO {
 	
-	private String patientId;
-	
-	private String doctorId;
-	
-	private LocalDate appointmentDate;
-	
-	private LocalTime startTime;
-	
-	private LocalTime endTime;
-	
-	private String notes;
-	
-
+    private LocalDate newDate;
+    
+    private LocalTime newStartTime;
+    
+    private LocalTime newEndTime;	
 
 }
